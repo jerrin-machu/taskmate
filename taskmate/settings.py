@@ -96,11 +96,13 @@ DATABASES ={
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':  env("DJANGO_DB_NAME"),
         'USER':  env("DJANGO_DB_USER"),
-        'PASSWORD': 'password',
+        'PASSWORD': env("DJANGO_DB_PASSWORD"),
         'HOST': env("DJANGO_DB_HOST"),
         'PORT':  env("DJANGO_DB_PORT"),
     }
 }
+
+
 
 
 # Password validation
