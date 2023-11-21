@@ -34,6 +34,10 @@ DEBUG = env("DJANGO_DEBUG")
 ALLOWED_HOSTS = ["web-production-38c3.up.railway.app",
                  "localhost"]
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'https://web-production-38c3.up.railway.app',
+]
 
 # Application definition
 
