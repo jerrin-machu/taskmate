@@ -31,8 +31,8 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DJANGO_DEBUG")
 
-ALLOWED_HOSTS = ["https://web-production-38c3.up.railway.app/",
-                 "http://127.0.0.1:8000/"]
+ALLOWED_HOSTS = ["web-production-38c3.up.railway.app/",
+                 "localhost"]
 
 
 # Application definition
