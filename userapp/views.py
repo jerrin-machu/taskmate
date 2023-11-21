@@ -2,10 +2,11 @@
 from django.shortcuts import render,redirect
 from .forms import CustomRegisterForm
 from django.contrib import messages
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
-
+@csrf_exempt
 def register(request):
     
     if request.method == 'POST':
